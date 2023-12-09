@@ -31,5 +31,6 @@ public class LearnSpringAopApplication implements CommandLineRunner {
 	@Override
 	public void run( String... args ) throws Exception {
 		logger.info( "The returned value is {}.", businessService1.calculateMax() );
+		businessService1.calculateMax();
 	}
 }
