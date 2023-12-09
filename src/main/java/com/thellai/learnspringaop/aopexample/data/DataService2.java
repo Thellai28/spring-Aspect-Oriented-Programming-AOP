@@ -1,10 +1,12 @@
 package com.thellai.learnspringaop.aopexample.data;
 
+import com.thellai.learnspringaop.aopexample.annotations.TrackTime;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class DataService1 {
+public class DataService2 {
 
+    @TrackTime
     public int[] retrieveData(){
         /*
             usually, this method will interreact with data base and return data, but in this example
@@ -16,6 +18,7 @@ public class DataService1 {
         }catch (InterruptedException ie ){
             ie.printStackTrace();
         }
-        return new int[]{1,2,3,4,5,6,7,8,88,0};
+
+        return new int[]{111,222,333,444,555,666,777,888,8888,000};
     }
 }
